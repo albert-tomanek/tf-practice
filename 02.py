@@ -9,7 +9,7 @@ sess = tf.Session()
 # Unlike constants, tensorflow variables can be changed.
 # However, they need to be initialized before the network is run.
 
-m = tf.Variable([2.0])
+m = tf.Variable([2.0])		# We give it a rank [1] tensor for some reason.
 c = tf.Variable([3.0])
 x = tf.placeholder(tf.float32)	# x is just a placeholder. We give x a value every time the tensor is run.
 				# It's a bit like giving an argument to the neural network
